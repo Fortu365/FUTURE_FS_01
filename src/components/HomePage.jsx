@@ -9,23 +9,14 @@ export default function HomePage() {
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">
-            <span className="hero-badge">👋 Welcome to my portfolio</span>
+            <span className="hero-badge">👋🏽 Welcome to my portfolio</span>
             <h1 className="hero-title">
-              Hi, I'm <span className="hero-title-gradient">Mahlodi Fortube</span>
+              Hi, I'm <span className="hero-title-gradient">Mahlodi Fortunate Malatji</span>
             </h1>
             <p className="hero-subtitle">Front-End Developer | Java Enthusiast</p>
             <p className="hero-description">
-              A passionate developer creating modern, responsive, and user-friendly web applications.
-              I specialize in building exceptional digital experiences that are fast, accessible, and beautiful.
+              I am a Diploma in Computer Science graduate from Tshwane University of Technology with a strong foundation in application development and problem-solving. Organized, punctual, and a team player with good communication skills. Eager to learn, grow, and take on new challenges in the tech field.
             </p>
-            <div className="hero-buttons">
-              <a href="#" className="btn btn-primary">
-                <FaDownload /> Download CV
-              </a>
-              <a href="#contact" className="btn btn-outline">
-                <FaEnvelope /> Contact Me
-              </a>
-            </div>
           </div>
           <div className="hero-image">
             <img 
