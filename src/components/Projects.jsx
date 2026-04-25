@@ -8,7 +8,7 @@ export default function Projects() {
       title: "EduNexa",
       icon: <FaGraduationCap />,
       description: "EduNexa is an online platform designed for students by a student. It is a free online platform that has access to most SA private/public institutions and bursaries. It protects student data with transparency and responsibility. A modern, fully connected, and 99.99% free digital platform designed to simplify the tertiary application process for South African students.",
-      tags: ["React", "Node.js", "MongoDB", "Express"],
+      tags: ["React", "Node.js","mySQL","SQLite", "Express"],
       github: "#",
       demo: "#"
     },
