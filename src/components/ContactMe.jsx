@@ -28,8 +28,9 @@ export default function ContactMe() {
         <div className="page-header">
           <h1 className="page-title">Get In Touch</h1>
           <p className="page-subtitle">Let's collaborate and build something amazing together</p>
-     
-
+        </div>
+        <div className="contact-grid">
+          <div className="contact-info">
             <h2>Let's Talk</h2>
             <p>I'm currently available for freelance work, collaborations, or just a friendly chat about tech.</p>
             <div className="contact-details">
@@ -65,7 +66,8 @@ export default function ContactMe() {
             <div className="availability">
               <div className="availability-icon"><FaRocket /></div>
               <p><span>Available immediately</span> for new opportunities</p>
-   </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
