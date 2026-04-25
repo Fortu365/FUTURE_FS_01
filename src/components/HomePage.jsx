@@ -1,7 +1,7 @@
 // components/HomePage.js
 import './HomePage.css';
 import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import profileImg from './profile-placeholder.png'; // Add your image
+import profileImg from 'Fortu-portfolio.jpeg'; // Add your image
 
 export default function HomePage() {
   return (
