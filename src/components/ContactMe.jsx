@@ -68,9 +68,6 @@ export default function ContactMe() {
               <p><span>Available immediately</span> for new opportunities</p>
             </div>
           </div>
-          <div className="contact-form">
-            <h2>Send a Message</h2>
-          </div>
         </div>
       </div>
     </div>
