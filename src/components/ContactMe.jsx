@@ -70,40 +70,6 @@ export default function ContactMe() {
           </div>
           <div className="contact-form">
             <h2>Send a Message</h2>
-            <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <input 
-                  type="text" 
-                  name="name" 
-                  placeholder="Your Name" 
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <input 
-                  type="email" 
-                  name="email" 
-                  placeholder="Your Email" 
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <textarea 
-                  name="message" 
-                  placeholder="Your Message" 
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary btn-submit">
-                <FaPaperPlane /> Send Message
-              </button>
-            </form>
           </div>
         </div>
       </div>
