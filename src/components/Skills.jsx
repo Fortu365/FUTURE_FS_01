@@ -1,69 +1,80 @@
+// components/Skills.js
 import './Skills.css';
-export default function Skills(){
+import { 
+  FaCode, FaDatabase, FaServer, FaCloud, 
+  FaBrain, FaUsers, FaMicrosoft, FaLanguage 
+} from 'react-icons/fa';
 
-return(
-<>
+export default function Skills() {
+  const skillCategories = [
+    {
+      title: "Front-End Development",
+      icon: <FaCode />,
+      skills: ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap"]
+    },
+    {
+      title: "Back-End Development",
+      icon: <FaServer />,
+      skills: ["Java", "Node.js", "Express.js", "Python (Learning)"]
+    },
+    {
+      title: "Database & Data",
+      icon: <FaDatabase />,
+      skills: ["PL/SQL (Oracle)", "SQLite3", "MySQL/MariaDB", "Nodemailer"]
+    },
+    {
+      title: "Deployment & Tools",
+      icon: <FaCloud />,
+      skills: ["GitHub", "Render", "VS Code", "Postman"]
+    },
+    {
+      title: "Analytical Skills",
+      icon: <FaBrain />,
+      skills: ["Problem Solving", "Critical Thinking", "Strategic Planning", "Debugging"]
+    },
+    {
+      title: "Soft Skills",
+      icon: <FaUsers />,
+      skills: ["Communication", "Teamwork", "Attention to Detail", "Diversity Awareness"]
+    },
+    {
+      title: "Microsoft Office",
+      icon: <FaMicrosoft />,
+      skills: ["Word", "Excel", "PowerPoint", "Outlook", "OneDrive", "Teams"]
+    },
+    {
+      title: "Languages",
+      icon: <FaLanguage />,
+      skills: ["Sepedi (Home)", "English (Fluent)", "IsiZulu (Moderate)"]
+    }
+  ];
 
-    <h1 className="the-skills"> SKILLS</h1>
-
-<pre>
-    <h2>CORE SKILLS </h2>
-    
-    <p>
-        Technical Skills  <br></br>
-        Front-End Development:  <br></br>
-        •⁠  ⁠Web: HTML5, CSS3, JavaScript  <br></br>
-        •⁠  ⁠Desktop GUI: Java  <br></br>
-    </p>
-
-
-    <p>
-        Back-End Development:  <br></br>
-        •⁠  ⁠Primary: Java, Node.js, Express.js  <br></br>
-        •⁠  ⁠Learning: Python  <br></br>
-    </p>
-
-    <p>
-        Database & Data:<br></br>
-        •⁠  ⁠Databases: PL/SQL (Oracle), SQLite3, MySQL/MariaDB(XAMPP) <br></br>
-        •⁠  ⁠Email Service: Nodemailer (Node.js) <br></br>
-    </p>
-
-    <p>
-        Deployment & Development: <br></br>
-        •⁠  ⁠GitHub <br></br>
-        •⁠  ⁠Render <br></br>
-    </p>
-
-    <p>
-        Analytical Skills:  <br></br>
-      •⁠  ⁠Problem solving, Critical Thinking, Strategic Planning  <br></br>
-    </p>
-
-    <p>
-        Soft Skills:  <br></br>
-       •⁠  ⁠Communication, Teamwork, Attention to Detail, Diversity Awareness <br></br>
-    </p>
-
-    <p>
-        Microsoft Office: <br></br>
-      •⁠  ⁠Word, Excel, PowerPoint, Outlook, OneDrive, Teams <br></br>
-    </p>
-
-    <p>
-        Languages: 
-       •	Sepedi(Home Language), English(Fluent) , IsZulu(Moderate)
-
-    </p>
-
-</pre>
-
-
-</>
-
-
-)
-
-
-
+  return (
+    <div className="skills-page">
+      <div className="container">
+        <div className="page-header">
+          <h1 className="page-title">Skills & Expertise</h1>
+          <p className="page-subtitle">Technologies and competencies I bring to the table</p>
+        </div>
+        <div className="skills-grid">
+          {skillCategories.map((category, index) => (
+            <div key={index} className="skill-card">
+              <div className="skill-header">
+                <div className="skill-icon">{category.icon}</div>
+                <h2>{category.title}</h2>
+              </div>
+              <ul className="skill-items">
+                {category.skills.map((skill, idx) => (
+                  <li key={idx}>
+                    <span className="skill-bullet">▹</span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
