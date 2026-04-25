@@ -1,7 +1,7 @@
 // components/HomePage.js
 import './HomePage.css';
 import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import profileImg from 'Fortu-portfolio.jpeg'; // Add your image
+
 
 export default function HomePage() {
   return (
@@ -29,7 +29,7 @@ export default function HomePage() {
           </div>
           <div className="hero-image">
             <img 
-              src={profileImg} 
+              src="Fortu-portfolio.jpeg"
               alt="Mahlodi Fortube" 
               className="profile-image"
             />
